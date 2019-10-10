@@ -1,0 +1,44 @@
+﻿body {
+    background-color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.form-container {
+    height: 475px;
+    width: 325px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title_color {
+    background-color: #000000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.btn {
+    width: 150px;
+}
+
+#tip {
+    padding-left: 5px;
+}
+
+#each {
+    font-size: 18px;
+    font-weight: bold;
+}

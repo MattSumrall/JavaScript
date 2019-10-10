@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>JavaScript Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+
+        <form>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-xs-4 offset-lg-4 offset-md-3 offset-sm-2">
+                    <div class="form-container">
+                        <div class="title_color text-center">
+                            <h2 class="text-uppercase">Tip Calculator</h2>
+                        </div>
+                        <!-- Bill amount input -->
+                        <div class="form-group pl-3 pr-3">
+                            <label for="billAmount">How much was your bill?</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="fas fa-dollar-sign"></i></span>
+                                <input type="text" class="form-control" id="billAmount" placeholder="Bill Amount" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <!-- Service quality dropdown -->
+                        <div class="form-group pl-3 pr-3">
+                            <label for="serviceQuality">How was your service?</label>
+                            <select class="form-control" id="serviceQuality">
+                                <option disabled selected value="0">-- Choose an Option --</option>
+                                <option value="0.3">30&#37; &#45; Outstanding</option>
+                                <option value="0.2">20&#37; &#45; Good</option>
+                                <option value="0.15">15&#37; &#45; It was OK</option>
+                                <option value="0.1">10&#37; &#45; Bad</option>
+                                <option value="0.05">5&#37; &#45; Terrible</option>
+                            </select>
+                        </div>
+                        <!-- Number of people input -->
+                        <div class="form-group pl-3 pr-3">
+                            <label for="numberOfPeople">How many people share the bill?</label>
+                            <input type="text" class="form-control" id="numberOfPeople" placeholder="Number of People">
+                        </div>
+                        <!-- Calculate button -->
+                        <div class="form-group text-center pl-3 pr-3">
+                            <button type="button" class="btn" id="calculate">Calculate!</button>
+                        </div>
+                        <!-- Tip total -->
+                        <div class="text-center pt-2" id="tipTotal">
+                            <i class="fas fa-dollar-sign fa-2x"><span id="tip">0.00</span></i>
+                            <small id="each">each</small>
+                        </div>
+                    </div><!-- Form container-->
+                </div><!-- column -->
+            </div><!-- row -->
+        </form>
+                
+    </div><!-- container -->
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
